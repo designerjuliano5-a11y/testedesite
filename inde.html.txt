@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forro em PVC – Cartão Digital</title>
+
+  <meta name="description" content="Instalação de forro em PVC com qualidade, rapidez e acabamento profissional. Peça seu orçamento pelo WhatsApp.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f3f4f6;
+      padding: 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 420px;
+      width: 100%;
+      border-radius: 18px;
+      padding: 24px 22px 26px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15);
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0f766e, #22c55e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 0.98rem;
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #ecfeff;
+      color: #0f766e;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e5e7eb;
+      margin: 14px 0;
+    }
+
+    .info-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 6px;
+      gap: 8px;
+    }
+
+    .info-label {
+      font-weight: 500;
+    }
+
+    .info-value {
+      text-align: right;
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 0.98rem;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s;
+    }
+
+    .btn-primary {
+      background: #0f766e;
+      color: #ffffff;
+      box-shadow: 0 10px 20px rgba(15, 118, 110, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 26px rgba(15, 118, 110, 0.45);
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      color: #0f766e;
+      border: 1px solid #0f766e;
+    }
+
+    .btn-outline:hover {
+      background: #ecfeff;
+    }
+
+    .btn small {
+      opacity: 0.85;
+      font-weight: 500;
+      margin-left: 4px;
+    }
+
+    .footer {
+      margin-top: 14px;
+      font-size: 0.74rem;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 18px 22px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Inicial da empresa, pode trocar -->
+    <div class="logo">FP</div>
+
+    <h1 class="title">Forro em PVC Profissional</h1>
+    <p class="subtitle">
+      Instalação de forro em PVC com qualidade, rapidez e acabamento perfeito.
+    </p>
+
+    <div class="tag-list">
+      <span class="tag">Residencial</span>
+      <span class="tag">Comercial</span>
+      <span class="tag">Instalação rápida</span>
+      <span class="tag">Sem sujeira</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-line">
+      <span class="info-label">Empresa:</span>
+      <span class="info-value">Nome da sua empresa aqui</span>
+    </div>
+
+    <div class="info-line">
+      <span class="info-label">Atendemos em:</span>
+      <span class="info-value">Sua cidade e região</span>
+    </div>
+
+    <div class="info-line">
+      <span class="info-label">Horário:</span>
+      <span class="info-value">Seg a Sáb – 8h às 18h</span>
+    </div>
+
+    <div class="btns">
+      <a
+        class="btn btn-primary"
+        id="btnWhats"
+        href="#"
+        target="_blank"
+        rel="noopener"
+      >
+        Falar no WhatsApp
+        <small>(pedir orçamento)</small>
+      </a>
+
+      <a
+        class="btn btn-outline"
+        href="tel:+550000000000"
+      >
+        Ligar agora
+      </a>
+    </div>
+
+    <div class="footer">
+      Cartão digital de demonstração – personalize com seus dados reais.
+    </div>
+  </div>
+
+  <script>
+    // 🔧 1) Troque aqui pelo número REAL do WhatsApp:
+    // formato: 55 + DDD + número (sem espaço, sem traço)
+    const phone = "550000000000"; // exemplo: 5599999999999
+
+    const msg = encodeURIComponent(
+      "Olá! Gostaria de um orçamento de forro em PVC."
+    );
+
+    const btnWhats = document.getElementById("btnWhats");
+    btnWhats.href = `https://wa.me/${phone}?text=${msg}`;
+  </script>
+</body>
+</html>
